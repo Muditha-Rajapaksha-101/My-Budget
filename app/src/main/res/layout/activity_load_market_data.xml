@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoadMarketDataActivity">
+
+    <TextView
+        android:id="@+id/txtMarketData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/aldrich"
+        android:text="Exhange Rate On"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wbChart" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="AUD"
+        android:textColor="@color/purple_700"
+        app:layout_constraintStart_toStartOf="@+id/txtGBP"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/txtMarketData2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/aldrich"
+        android:text="Data Visualization"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <WebView
+        android:id="@+id/wbChart"
+        android:layout_width="372dp"
+        android:layout_height="209dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMarketData2" />
+
+    <TextView
+        android:id="@+id/USD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="100dp"
+        android:text="USD"
+        android:textColor="@color/purple_700"
+        app:layout_constraintStart_toStartOf="@+id/wbChart"
+        app:layout_constraintTop_toBottomOf="@+id/wbChart" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Buy"
+        app:layout_constraintStart_toStartOf="@+id/USD"
+        app:layout_constraintTop_toBottomOf="@+id/USD" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Sell"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/txtUSDBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="100"
+        app:layout_constraintBottom_toBottomOf="@+id/textView22"
+        app:layout_constraintStart_toEndOf="@+id/textView22"
+        app:layout_constraintTop_toTopOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/txtUSDSell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="100"
+        app:layout_constraintBottom_toBottomOf="@+id/textView23"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/txtGBP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="104dp"
+        android:text="GBP"
+        android:textColor="@color/purple_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wbChart" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Buy"
+        app:layout_constraintStart_toStartOf="@+id/txtGBP"
+        app:layout_constraintTop_toBottomOf="@+id/txtGBP" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="24dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="2dp"
+        android:text="Sell"
+        app:layout_constraintStart_toStartOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/txtGBPBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="100"
+        app:layout_constraintBottom_toBottomOf="@+id/textView27"
+        app:layout_constraintStart_toEndOf="@+id/textView27"
+        app:layout_constraintTop_toTopOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/txtGBPSell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="100"
+        app:layout_constraintBottom_toBottomOf="@+id/textView28"
+        app:layout_constraintStart_toEndOf="@+id/textView28"
+        app:layout_constraintTop_toTopOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="EUR"
+        android:textColor="@color/purple_700"
+        app:layout_constraintStart_toStartOf="@+id/USD"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Buy"
+        app:layout_constraintStart_toStartOf="@+id/textView31"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Sell"
+        app:layout_constraintStart_toStartOf="@+id/textView32"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <TextView
+        android:id="@+id/txtEURBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="100"
+        app:layout_constraintBottom_toBottomOf="@+id/textView32"
+        app:layout_constraintStart_toEndOf="@+id/textView32"
+        app:layout_constraintTop_toTopOf="@+id/textView32" />
+
+    <TextView
+        android:id="@+id/txtEURSell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="100"
+        app:layout_constraintBottom_toBottomOf="@+id/textView33"
+        app:layout_constraintStart_toEndOf="@+id/textView33"
+        app:layout_constraintTop_toTopOf="@+id/textView33" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Sell"
+        app:layout_constraintStart_toStartOf="@+id/textView48"
+        app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Buy"
+        app:layout_constraintStart_toStartOf="@+id/textView36"
+        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+    <TextView
+        android:id="@+id/txtAUDBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="100"
+        app:layout_constraintBottom_toBottomOf="@+id/textView48"
+        app:layout_constraintStart_toEndOf="@+id/textView48"
+        app:layout_constraintTop_toTopOf="@+id/textView48" />
+
+    <TextView
+        android:id="@+id/txtAUDSell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="100"
+        app:layout_constraintBottom_toBottomOf="@+id/textView47"
+        app:layout_constraintStart_toEndOf="@+id/textView47"
+        app:layout_constraintTop_toTopOf="@+id/textView47" />
+
+    <Spinner
+        android:id="@+id/spExchange"
+        android:layout_width="372dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/wbChart"
+        app:layout_constraintEnd_toEndOf="@+id/wbChart"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/wbChart"
+        app:layout_constraintTop_toBottomOf="@+id/txtMarketData2"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/txtExchangeRateDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/txtMarketData"
+        app:layout_constraintTop_toBottomOf="@+id/txtMarketData" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

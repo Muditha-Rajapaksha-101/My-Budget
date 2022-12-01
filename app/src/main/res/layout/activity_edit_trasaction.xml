@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.EditTransactionActivity">
+
+    <Spinner
+        android:id="@+id/spType"
+        android:layout_width="364dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@string/type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtType"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/txtType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spType"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etxtAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/amount"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/spCategory"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spCategory"
+        app:layout_constraintTop_toBottomOf="@+id/spCategory"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/txtjan_01_2022"
+        app:layout_constraintEnd_toEndOf="@+id/etxtAmount"
+        app:layout_constraintStart_toStartOf="@+id/etxtAmount"
+        app:layout_constraintTop_toBottomOf="@+id/etxtAmount" />
+
+    <EditText
+        android:id="@+id/etxtDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/description"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnDate"
+        app:layout_constraintStart_toStartOf="@+id/btnDate"
+        app:layout_constraintTop_toBottomOf="@+id/btnDate" />
+
+    <Spinner
+        android:id="@+id/spCategory"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/category"
+        app:layout_constraintEnd_toEndOf="@+id/spType"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spType"
+        app:layout_constraintTop_toBottomOf="@+id/spType"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/txtCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/category"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spCategory"
+        app:layout_constraintTop_toBottomOf="@+id/spType" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/btnUpdate"
+        app:layout_constraintEnd_toEndOf="@+id/etxtDescription"
+        app:layout_constraintStart_toStartOf="@+id/etxtDescription"
+        app:layout_constraintTop_toBottomOf="@+id/etxtDescription"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/btnDelete"
+        app:layout_constraintEnd_toEndOf="@+id/btnUpdate"
+        app:layout_constraintStart_toStartOf="@+id/btnUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdate" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">My Budget</string>
+    <string name="txtFeed">Feed</string>
+    <string name="txtReports">Reports</string>
+    <string name="btnAbout">About</string>
+    <string name="btnExit">Exit</string>
+    <string name="amount">Amount</string>
+    <string name="category">Category</string>
+    <string name="description">Description</string>
+    <string name="add_trasaction">Set Transaction</string>
+    <string name="type">Type</string>
+    <string name="btnAdd">ADd</string>
+    <string name="txtjan_01_2022">Jan-01-2022</string>
+
+    <string-array name="strType">
+        <item>Income</item>
+        <item>Expense</item>
+    </string-array>
+
+    <string-array name="strExhange">
+        <item>USD/LKR</item>
+        <item>GBP/LKR</item>
+        <item>EUR/LKR</item>
+        <item>AUD/LKR</item>
+    </string-array>
+
+    <string-array name="strReportType">
+        <item>Income</item>
+        <item>Expense</item>
+    </string-array>
+
+    <string-array name="strExpenseCategory">
+        <item>Travel</item>
+        <item>Food</item>
+        <item>Education</item>
+        <item>Shopping</item>
+        <item>Social</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="strIncomeCategory">
+        <item>Salary</item>
+        <item>Fee Income</item>
+        <item>Gift</item>
+    </string-array>
+
+    <string-array name="strCurrency">
+        <item>LKR</item>
+        <item>USD</item>
+        <item>GBP</item>
+        <item>EUR</item>
+        <item>AUD</item>
+    </string-array>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="remaining_balance">Remaining Balance</string>
+    <string name="emptyString">--------------</string>
+    <string name="btn_add_new_trasaction">Add New Trasaction</string>
+    <string name="edit_tasaction">Edit Transaction</string>
+    <string name="btnUpdate">Update</string>
+    <string name="btnDelete">Delete</string>
+    <string name="spCurrency">Currency</string>
+    <string name="add_new_income_category">ADD NEW INCOME CATEGORY</string>
+    <string name="add_new_expense_category">ADD NEW EXPENSE CATEGORY</string>
+
+</resources>

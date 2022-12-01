@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AboutActivity">
+
+    <ImageView
+        android:id="@+id/ivMain"
+        android:layout_width="0dp"
+        android:layout_height="232dp"
+        android:layout_marginTop="64dp"
+        android:contentDescription="icon"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/about2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="346dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:text="My budget application is created by Hasitha Mudalpath as a part of University Project"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMain" />
+
+    <TextView
+        android:id="@+id/txtAboutDes"
+        android:layout_width="345dp"
+        android:layout_height="254dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="16dp"
+        android:overScrollMode="always"
+        android:scrollbars="vertical"
+        android:text="This app allows you to track daily expenses and income. The App is directly connected to the Central Bank System to show you real time exchange rate information. This app also gives the facility to generate reports based on the data input by the user and present it as required. Daily expenses can be entered through the feed section of the application while also giving the user the freedom to change their previous transaction information. App will let the user to set a monthly buget and the user will be able to track how that budged has been spent. This will allow the user to manage and control their expenses actively. App Also offers connectivity to Central Bank website and presents you with real time exchange rate information. Application also offers visualisation of exchange rates on a daily basis. The report engine of the application offers reporting facilities to the user. This allows the user to get a list of expenses as well a list of incomes within a given time frame to an excel sheet for any required further calculations."
+        android:textAlignment="gravity"
+        android:textColor="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        android:layout_gravity="center_vertical|end"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="More About the Creator"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/ivfb"
+        android:layout_width="50dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="fb"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/fbicon2" />
+
+    <ImageView
+        android:id="@+id/ivInsa"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="insta"
+        app:layout_constraintStart_toEndOf="@+id/ivfb"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/instaicon" />
+
+    <TextView
+        android:id="@+id/txtAboutTopic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-black"
+        android:text="About My Budget"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
